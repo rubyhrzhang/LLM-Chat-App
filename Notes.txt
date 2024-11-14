@@ -1,0 +1,16 @@
+DESIGN -----------------------------------------------------------------------------------
+
+Components we'll need to build our bot:
+- Two chat message containers to display messages from the user and the bot, respectively.
+- A chat input widget so the user can type in a message.
+- A way to store the chat history so we can display it in the chat message containers.
+
+
+CONCEPTS ---------------------------------------------------------------------------------
+
+1. saving the chat history to st.session_state.messages
+Streamlit apps are stateless by default—they re-run from top to bottom on every user interaction. Without explicitly storing the chat history, all the messages would disappear whenever:
+    - The user enters a new message.
+    - The app re-renders due to an interaction (e.g., a button click or input submission)
+
+2. generator function to make the assistant’s reply appear incrementally rather than all at once
