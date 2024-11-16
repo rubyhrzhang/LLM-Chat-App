@@ -2,21 +2,21 @@
 
 import streamlit as st 
 import home
-from bots import mirror_bot, simple_bot_stream, chatgpt_bot
+from bots import echo_bot, simple_bot_stream, chatgpt_bot
 
 st.title('LLM chat app')
 
 # Sidebar for navigation
 tab = st.sidebar.selectbox(
     "Select a tab",
-    ("Home", "Mirror BOT", "Mirror BOT with streaming", "ChatGPT BOT")
+    ("Home", "Echo BOT", "Simple BOT with streaming", "ChatGPT BOT")
 )
 
 # Dictionary to map tab names to modules
 tabs = {
     "Home": home,
-    "Mirror BOT": mirror_bot,
-    "Mirror BOT with streaming": simple_bot_stream,
+    "Echo BOT": echo_bot,
+    "Simple BOT with streaming": simple_bot_stream,
     "ChatGPT BOT": chatgpt_bot
 }
 

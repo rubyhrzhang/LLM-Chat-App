@@ -4,7 +4,7 @@ import random
 import time
 
 def show():
-    st.title("Simple BOT with streaming")
+    st.header("_Simple BOT with streaming_")
 
     # the assistant’s reply appear incrementally rather than all at once
     # Streamed response emulator

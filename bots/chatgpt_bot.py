@@ -5,7 +5,7 @@ import random
 import time
 
 def show():
-    st.header("ChatGPT BOT")
+    st.header("_ChatGPT BOT_")
 
     # Set OpenAI API key from Streamlit secrets
     client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
