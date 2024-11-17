@@ -2,7 +2,7 @@
 import streamlit as st
 
 def show():
-    st.header("Echo Bot")
+    st.header("_Echo Bot_")
 
     # Initialize chat history - saving the chat history to st.session_state.messages_mirror_bot so messages won't disappear 
     if "messages_mirror_bot" not in st.session_state:

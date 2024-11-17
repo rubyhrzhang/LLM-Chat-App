@@ -1,3 +1,6 @@
+ref: https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps
+useful links: https://docs.streamlit.io/get-started/tutorials/create-an-app
+
 DESIGN -----------------------------------------------------------------------------------
 
 Components we'll need to build our bot:
